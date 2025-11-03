@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  db:
+    # Example: map Postgres data to a host folder (use with caution on Windows)
+    volumes:
+      - "./pgdata:/var/lib/postgresql/data"
+
+  web:
+    # Example: map OpenProject assets to a host folder so attachments are visible on the host
+    volumes:
+      - "./opdata:/var/openproject/assets"
