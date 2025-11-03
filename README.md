@@ -35,7 +35,7 @@ Next you start up the containers in the background while making sure to pull the
 OPENPROJECT_HTTPS=false docker compose up -d --build --pull always
 ```
 
-After a while, OpenProject should be up and running on `http://localhost:8080`. The default username and password is login: `admin`, and password: `admin`.
+After a while, OpenProject should be up and running on `http://localhost:8081`. The default username and password is login: `admin`, and password: `admin`.
 The `OPENPROJECT_HTTPS=false` environment variable explicitly disables HTTPS mode for the first startup. Without this, OpenProject assumes it's running behind HTTPS in production by default.
 We do strongly recommend you use OpenProject behind a TLS terminated proxy for production purposes and remove this flag before actually starting to use it.
 
@@ -116,7 +116,7 @@ PORT=4000
 If you don't want OpenProject to bind to `0.0.0.0` you can bind it to localhost only like this:
 
 ```
-PORT=127.0.0.1:8080
+PORT=127.0.0.1:8081
 ```
 
 ## TAG
